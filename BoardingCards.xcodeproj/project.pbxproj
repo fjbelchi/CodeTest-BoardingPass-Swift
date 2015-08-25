@@ -7,12 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF423E971B88635A003487B7 /* TrainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF423E961B88635A003487B7 /* TrainTableViewCell.swift */; };
+		FF423E9A1B889B84003487B7 /* BoardingBusPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF423E991B889B84003487B7 /* BoardingBusPass.swift */; };
+		FF423E9D1B889BA8003487B7 /* BoardingPlanePass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF423E9C1B889BA8003487B7 /* BoardingPlanePass.swift */; };
+		FF423EA11B89C53E003487B7 /* AnyBoardingPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF423EA01B89C53E003487B7 /* AnyBoardingPass.swift */; };
+		FF83023D1B16230000D1635B /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF83023C1B16230000D1635B /* ListViewController.swift */; };
+		FF8302411B162CD600D1635B /* PassTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8302401B162CD600D1635B /* PassTableViewAdapter.swift */; };
+		FF8302431B162D8100D1635B /* TableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8302421B162D8100D1635B /* TableViewAdapter.swift */; };
+		FFA1F9761AD2971200F4F66E /* BoardingPassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA1F9751AD2971200F4F66E /* BoardingPassType.swift */; };
+		FFA7B8DA1B273FA5000C6A47 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA7B8D61B273FA5000C6A47 /* Section.swift */; };
+		FFA7B8DB1B273FA5000C6A47 /* SectionedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA7B8D71B273FA5000C6A47 /* SectionedDataSource.swift */; };
+		FFA7B8DC1B273FA5000C6A47 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA7B8D81B273FA5000C6A47 /* TableViewDataSource.swift */; };
 		FFB3A3861AB817570012DB92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3A3851AB817570012DB92 /* AppDelegate.swift */; };
-		FFB3A3881AB817570012DB92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3A3871AB817570012DB92 /* ViewController.swift */; };
-		FFB3A38B1AB817570012DB92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFB3A3891AB817570012DB92 /* Main.storyboard */; };
 		FFB3A38D1AB817570012DB92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFB3A38C1AB817570012DB92 /* Images.xcassets */; };
-		FFB3A3901AB817570012DB92 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB3A38E1AB817570012DB92 /* LaunchScreen.xib */; };
-		FFB3A39C1AB817570012DB92 /* BoardingCardsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3A39B1AB817570012DB92 /* BoardingCardsTests.swift */; };
+		FFF4C53B1AE66CCA00531021 /* BoardingPassGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4C53A1AE66CCA00531021 /* BoardingPassGenerator.swift */; };
+		FFF4C53E1AE66CEF00531021 /* BoardingPassGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4C53D1AE66CEF00531021 /* BoardingPassGeneratorTests.swift */; };
+		FFF4C5401AE6A6EC00531021 /* BoardingPassSorterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4C53F1AE6A6EC00531021 /* BoardingPassSorterTests.swift */; };
+		FFF4C5421AE6A70700531021 /* BoardingPassSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4C5411AE6A70700531021 /* BoardingPassSorter.swift */; };
+		FFF86EFD1B68B8AA001157CE /* BoardingTrainPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF86EFC1B68B8AA001157CE /* BoardingTrainPass.swift */; };
+		FFFEF8AC1AC160C400FA7DF5 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEF8AB1AC160C400FA7DF5 /* City.swift */; };
+		FFFEF8AE1AC160EE00FA7DF5 /* BoardingBusPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEF8AD1AC160EE00FA7DF5 /* BoardingBusPassTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +40,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF423E961B88635A003487B7 /* TrainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainTableViewCell.swift; path = TableViewAdapter/Cells/TrainTableViewCell.swift; sourceTree = "<group>"; };
+		FF423E991B889B84003487B7 /* BoardingBusPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingBusPass.swift; path = Models/BoardingBusPass.swift; sourceTree = "<group>"; };
+		FF423E9C1B889BA8003487B7 /* BoardingPlanePass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingPlanePass.swift; path = Models/BoardingPlanePass.swift; sourceTree = "<group>"; };
+		FF423EA01B89C53E003487B7 /* AnyBoardingPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnyBoardingPass.swift; path = Models/AnyBoardingPass.swift; sourceTree = "<group>"; };
+		FF83023C1B16230000D1635B /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ListViewController.swift; path = ViewControllers/List/ListViewController.swift; sourceTree = "<group>"; };
+		FF8302401B162CD600D1635B /* PassTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PassTableViewAdapter.swift; path = TableViewAdapter/PassTableViewAdapter.swift; sourceTree = "<group>"; };
+		FF8302421B162D8100D1635B /* TableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewAdapter.swift; path = TableViewAdapter/TableViewAdapter.swift; sourceTree = "<group>"; };
+		FFA1F9751AD2971200F4F66E /* BoardingPassType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingPassType.swift; path = Models/BoardingPassType.swift; sourceTree = "<group>"; };
+		FFA7B8D61B273FA5000C6A47 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Section.swift; path = DataSource/Section.swift; sourceTree = "<group>"; };
+		FFA7B8D71B273FA5000C6A47 /* SectionedDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SectionedDataSource.swift; path = DataSource/SectionedDataSource.swift; sourceTree = "<group>"; };
+		FFA7B8D81B273FA5000C6A47 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewDataSource.swift; path = DataSource/TableViewDataSource.swift; sourceTree = "<group>"; };
 		FFB3A3801AB817570012DB92 /* BoardingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB3A3841AB817570012DB92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFB3A3851AB817570012DB92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FFB3A3871AB817570012DB92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FFB3A38A1AB817570012DB92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FFB3A38C1AB817570012DB92 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		FFB3A38F1AB817570012DB92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		FFB3A3951AB817570012DB92 /* BoardingCardsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoardingCardsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFB3A39A1AB817570012DB92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FFB3A39B1AB817570012DB92 /* BoardingCardsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardingCardsTests.swift; sourceTree = "<group>"; };
+		FFF4C53A1AE66CCA00531021 /* BoardingPassGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingPassGenerator.swift; path = Sorting/BoardingPassGenerator.swift; sourceTree = "<group>"; };
+		FFF4C53D1AE66CEF00531021 /* BoardingPassGeneratorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingPassGeneratorTests.swift; path = Sorting/BoardingPassGeneratorTests.swift; sourceTree = "<group>"; };
+		FFF4C53F1AE6A6EC00531021 /* BoardingPassSorterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingPassSorterTests.swift; path = Sorting/BoardingPassSorterTests.swift; sourceTree = "<group>"; };
+		FFF4C5411AE6A70700531021 /* BoardingPassSorter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingPassSorter.swift; path = Sorting/BoardingPassSorter.swift; sourceTree = "<group>"; };
+		FFF86EFC1B68B8AA001157CE /* BoardingTrainPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingTrainPass.swift; path = Models/BoardingTrainPass.swift; sourceTree = "<group>"; };
+		FFFEF8AB1AC160C400FA7DF5 /* City.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = City.swift; path = Models/City.swift; sourceTree = "<group>"; };
+		FFFEF8AD1AC160EE00FA7DF5 /* BoardingBusPassTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingBusPassTests.swift; path = Models/BoardingBusPassTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,11 +84,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF423E951B886323003487B7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FF423E961B88635A003487B7 /* TrainTableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		FF83023A1B1622C000D1635B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FF83023B1B1622D000D1635B /* List */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FF83023B1B1622D000D1635B /* List */ = {
+			isa = PBXGroup;
+			children = (
+				FF83023C1B16230000D1635B /* ListViewController.swift */,
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		FF83023F1B162CA900D1635B /* TableViewAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				FF423E951B886323003487B7 /* Cells */,
+				FF8302421B162D8100D1635B /* TableViewAdapter.swift */,
+				FF8302401B162CD600D1635B /* PassTableViewAdapter.swift */,
+			);
+			name = TableViewAdapter;
+			sourceTree = "<group>";
+		};
 		FFB3A3771AB817560012DB92 = {
 			isa = PBXGroup;
 			children = (
 				FFB3A3821AB817570012DB92 /* BoardingCards */,
 				FFB3A3981AB817570012DB92 /* BoardingCardsTests */,
+				FFB3A3991AB817570012DB92 /* Supporting Files */,
 				FFB3A3811AB817570012DB92 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,11 +140,13 @@
 		FFB3A3821AB817570012DB92 /* BoardingCards */ = {
 			isa = PBXGroup;
 			children = (
+				FFB511E21B1F4E7300103F09 /* DataSource */,
+				FF83023F1B162CA900D1635B /* TableViewAdapter */,
+				FF83023A1B1622C000D1635B /* ViewControllers */,
+				FFF4C5391AE66CA600531021 /* Sorting */,
+				FFFEF8A81AC1602A00FA7DF5 /* Models */,
 				FFB3A3851AB817570012DB92 /* AppDelegate.swift */,
-				FFB3A3871AB817570012DB92 /* ViewController.swift */,
-				FFB3A3891AB817570012DB92 /* Main.storyboard */,
 				FFB3A38C1AB817570012DB92 /* Images.xcassets */,
-				FFB3A38E1AB817570012DB92 /* LaunchScreen.xib */,
 				FFB3A3831AB817570012DB92 /* Supporting Files */,
 			);
 			path = BoardingCards;
@@ -98,8 +163,8 @@
 		FFB3A3981AB817570012DB92 /* BoardingCardsTests */ = {
 			isa = PBXGroup;
 			children = (
-				FFB3A39B1AB817570012DB92 /* BoardingCardsTests.swift */,
-				FFB3A3991AB817570012DB92 /* Supporting Files */,
+				FFF4C53C1AE66CD100531021 /* Sorting */,
+				FFFEF8AF1AC160F200FA7DF5 /* Models */,
 			);
 			path = BoardingCardsTests;
 			sourceTree = "<group>";
@@ -110,6 +175,56 @@
 				FFB3A39A1AB817570012DB92 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			path = BoardingCardsTests;
+			sourceTree = "<group>";
+		};
+		FFB511E21B1F4E7300103F09 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				FFA7B8D61B273FA5000C6A47 /* Section.swift */,
+				FFA7B8D71B273FA5000C6A47 /* SectionedDataSource.swift */,
+				FFA7B8D81B273FA5000C6A47 /* TableViewDataSource.swift */,
+			);
+			name = DataSource;
+			sourceTree = "<group>";
+		};
+		FFF4C5391AE66CA600531021 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				FFF4C53A1AE66CCA00531021 /* BoardingPassGenerator.swift */,
+				FFF4C5411AE6A70700531021 /* BoardingPassSorter.swift */,
+			);
+			name = Sorting;
+			sourceTree = "<group>";
+		};
+		FFF4C53C1AE66CD100531021 /* Sorting */ = {
+			isa = PBXGroup;
+			children = (
+				FFF4C53D1AE66CEF00531021 /* BoardingPassGeneratorTests.swift */,
+				FFF4C53F1AE6A6EC00531021 /* BoardingPassSorterTests.swift */,
+			);
+			name = Sorting;
+			sourceTree = "<group>";
+		};
+		FFFEF8A81AC1602A00FA7DF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFA1F9751AD2971200F4F66E /* BoardingPassType.swift */,
+				FF423EA01B89C53E003487B7 /* AnyBoardingPass.swift */,
+				FFF86EFC1B68B8AA001157CE /* BoardingTrainPass.swift */,
+				FF423E991B889B84003487B7 /* BoardingBusPass.swift */,
+				FF423E9C1B889BA8003487B7 /* BoardingPlanePass.swift */,
+				FFFEF8AB1AC160C400FA7DF5 /* City.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FFFEF8AF1AC160F200FA7DF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FFFEF8AD1AC160EE00FA7DF5 /* BoardingBusPassTests.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -156,7 +271,8 @@
 		FFB3A3781AB817560012DB92 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0620;
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Francisco J. Belchi";
 				TargetAttributes = {
 					FFB3A37F1AB817570012DB92 = {
@@ -173,8 +289,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
-				Base,
 			);
 			mainGroup = FFB3A3771AB817560012DB92;
 			productRefGroup = FFB3A3811AB817570012DB92 /* Products */;
@@ -192,8 +306,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB3A38B1AB817570012DB92 /* Main.storyboard in Resources */,
-				FFB3A3901AB817570012DB92 /* LaunchScreen.xib in Resources */,
 				FFB3A38D1AB817570012DB92 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +324,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB3A3881AB817570012DB92 /* ViewController.swift in Sources */,
+				FF8302411B162CD600D1635B /* PassTableViewAdapter.swift in Sources */,
+				FFA7B8DB1B273FA5000C6A47 /* SectionedDataSource.swift in Sources */,
+				FFF86EFD1B68B8AA001157CE /* BoardingTrainPass.swift in Sources */,
 				FFB3A3861AB817570012DB92 /* AppDelegate.swift in Sources */,
+				FFF4C53B1AE66CCA00531021 /* BoardingPassGenerator.swift in Sources */,
+				FF423EA11B89C53E003487B7 /* AnyBoardingPass.swift in Sources */,
+				FFA1F9761AD2971200F4F66E /* BoardingPassType.swift in Sources */,
+				FF423E971B88635A003487B7 /* TrainTableViewCell.swift in Sources */,
+				FFF4C5421AE6A70700531021 /* BoardingPassSorter.swift in Sources */,
+				FF8302431B162D8100D1635B /* TableViewAdapter.swift in Sources */,
+				FFFEF8AC1AC160C400FA7DF5 /* City.swift in Sources */,
+				FFA7B8DA1B273FA5000C6A47 /* Section.swift in Sources */,
+				FF83023D1B16230000D1635B /* ListViewController.swift in Sources */,
+				FF423E9A1B889B84003487B7 /* BoardingBusPass.swift in Sources */,
+				FFA7B8DC1B273FA5000C6A47 /* TableViewDataSource.swift in Sources */,
+				FF423E9D1B889BA8003487B7 /* BoardingPlanePass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,7 +347,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FFB3A39C1AB817570012DB92 /* BoardingCardsTests.swift in Sources */,
+				FFF4C5401AE6A6EC00531021 /* BoardingPassSorterTests.swift in Sources */,
+				FFF4C53E1AE66CEF00531021 /* BoardingPassGeneratorTests.swift in Sources */,
+				FFFEF8AE1AC160EE00FA7DF5 /* BoardingBusPassTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -234,25 +362,6 @@
 			targetProxy = FFB3A3961AB817570012DB92 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		FFB3A3891AB817570012DB92 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFB3A38A1AB817570012DB92 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		FFB3A38E1AB817570012DB92 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FFB3A38F1AB817570012DB92 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FFB3A39D1AB817570012DB92 /* Debug */ = {
@@ -275,6 +384,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -338,9 +448,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BoardingCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fjbelchi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -348,8 +461,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = BoardingCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fjbelchi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -368,6 +483,7 @@
 				);
 				INFOPLIST_FILE = BoardingCardsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fjbelchi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoardingCards.app/BoardingCards";
 			};
@@ -383,6 +499,7 @@
 				);
 				INFOPLIST_FILE = BoardingCardsTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fjbelchi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoardingCards.app/BoardingCards";
 			};
@@ -407,6 +524,7 @@
 				FFB3A3A11AB817570012DB92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FFB3A3A21AB817570012DB92 /* Build configuration list for PBXNativeTarget "BoardingCardsTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +533,7 @@
 				FFB3A3A41AB817570012DB92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
