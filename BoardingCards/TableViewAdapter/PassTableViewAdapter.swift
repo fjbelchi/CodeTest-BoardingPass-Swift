@@ -21,15 +21,15 @@ final class PassTableViewAdapter : TableViewAdapter {
         return [busCell, trainCell, planeCell]
     }
     
-    func reuseIdentifierForObject(object: ItemType) -> String {
+    func reuseIdentifierForObject(_ object: ItemType) -> String {
         if let boardingPass = object.boardingPass.self as? ConfigureCell {
-            return boardingPass.dynamicType.cellIdentifier()
+            return type(of: boardingPass).cellIdentifier()
         } else {
             return ""
         }
     }
     
-    func configureCell(tableView: UITableView, cell:UITableViewCell, object:ItemType, indexPath:NSIndexPath) {
+    func configureCell(_ tableView: UITableView, cell:UITableViewCell, object:ItemType, indexPath:IndexPath) {
         if let boardingPass = object.boardingPass.self as? ConfigureCell {
             boardingPass.configureCell(cell)
         }
@@ -39,7 +39,7 @@ final class PassTableViewAdapter : TableViewAdapter {
 
 private protocol ConfigureCell {
     static func cellIdentifier() -> String
-    func configureCell(cell: UITableViewCell)
+    func configureCell(_ cell: UITableViewCell)
 }
 
 extension BoardingBusPass: ConfigureCell {
@@ -47,11 +47,11 @@ extension BoardingBusPass: ConfigureCell {
         return "busIdentifier"
     }
     
-    func configureCell(cell: UITableViewCell) {
+    func configureCell(_ cell: UITableViewCell) {
         cell.textLabel?.text = self.description
         cell.textLabel?.numberOfLines = 0
-        cell.textLabel?.font = UIFont.systemFontOfSize(12.0)
-        cell.backgroundColor = UIColor.cyanColor()
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 12.0)
+        cell.backgroundColor = UIColor.cyan
     }
 }
 
@@ -60,7 +60,7 @@ extension BoardingTrainPass: ConfigureCell {
         return "trainIdentifier"
     }
     
-    func configureCell(cell: UITableViewCell) {
+    func configureCell(_ cell: UITableViewCell) {
         guard let cell = cell as? TrainTableViewCell else {
             return
         }
@@ -75,10 +75,10 @@ extension BoardingPlanePass: ConfigureCell {
         return "PlaneIdentifier"
     }
     
-    func configureCell(cell: UITableViewCell) {
+    func configureCell(_ cell: UITableViewCell) {
         cell.textLabel?.text = self.description
-        cell.textLabel?.font = UIFont.systemFontOfSize(12.0)
+        cell.textLabel?.font = UIFont.systemFont(ofSize: 12.0)
         cell.textLabel?.numberOfLines = 0
-        cell.backgroundColor = UIColor.brownColor()
+        cell.backgroundColor = UIColor.brown
     }
 }

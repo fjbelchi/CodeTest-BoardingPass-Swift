@@ -15,7 +15,6 @@
 		FF8302411B162CD600D1635B /* PassTableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8302401B162CD600D1635B /* PassTableViewAdapter.swift */; };
 		FF8302431B162D8100D1635B /* TableViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8302421B162D8100D1635B /* TableViewAdapter.swift */; };
 		FFA1F9761AD2971200F4F66E /* BoardingPassType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA1F9751AD2971200F4F66E /* BoardingPassType.swift */; };
-		FFA7B8DA1B273FA5000C6A47 /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA7B8D61B273FA5000C6A47 /* Section.swift */; };
 		FFA7B8DB1B273FA5000C6A47 /* SectionedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA7B8D71B273FA5000C6A47 /* SectionedDataSource.swift */; };
 		FFA7B8DC1B273FA5000C6A47 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA7B8D81B273FA5000C6A47 /* TableViewDataSource.swift */; };
 		FFB3A3861AB817570012DB92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB3A3851AB817570012DB92 /* AppDelegate.swift */; };
@@ -48,7 +47,6 @@
 		FF8302401B162CD600D1635B /* PassTableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PassTableViewAdapter.swift; path = TableViewAdapter/PassTableViewAdapter.swift; sourceTree = "<group>"; };
 		FF8302421B162D8100D1635B /* TableViewAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewAdapter.swift; path = TableViewAdapter/TableViewAdapter.swift; sourceTree = "<group>"; };
 		FFA1F9751AD2971200F4F66E /* BoardingPassType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingPassType.swift; path = Models/BoardingPassType.swift; sourceTree = "<group>"; };
-		FFA7B8D61B273FA5000C6A47 /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Section.swift; path = DataSource/Section.swift; sourceTree = "<group>"; };
 		FFA7B8D71B273FA5000C6A47 /* SectionedDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SectionedDataSource.swift; path = DataSource/SectionedDataSource.swift; sourceTree = "<group>"; };
 		FFA7B8D81B273FA5000C6A47 /* TableViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewDataSource.swift; path = DataSource/TableViewDataSource.swift; sourceTree = "<group>"; };
 		FFB3A3801AB817570012DB92 /* BoardingCards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoardingCards.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,7 +179,6 @@
 		FFB511E21B1F4E7300103F09 /* DataSource */ = {
 			isa = PBXGroup;
 			children = (
-				FFA7B8D61B273FA5000C6A47 /* Section.swift */,
 				FFA7B8D71B273FA5000C6A47 /* SectionedDataSource.swift */,
 				FFA7B8D81B273FA5000C6A47 /* TableViewDataSource.swift */,
 			);
@@ -277,9 +274,11 @@
 				TargetAttributes = {
 					FFB3A37F1AB817570012DB92 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0820;
 					};
 					FFB3A3941AB817570012DB92 = {
 						CreatedOnToolsVersion = 6.2;
+						LastSwiftMigration = 0820;
 						TestTargetID = FFB3A37F1AB817570012DB92;
 					};
 				};
@@ -288,8 +287,6 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
-			knownRegions = (
-			);
 			mainGroup = FFB3A3771AB817560012DB92;
 			productRefGroup = FFB3A3811AB817570012DB92 /* Products */;
 			projectDirPath = "";
@@ -335,7 +332,6 @@
 				FFF4C5421AE6A70700531021 /* BoardingPassSorter.swift in Sources */,
 				FF8302431B162D8100D1635B /* TableViewAdapter.swift in Sources */,
 				FFFEF8AC1AC160C400FA7DF5 /* City.swift in Sources */,
-				FFA7B8DA1B273FA5000C6A47 /* Section.swift in Sources */,
 				FF83023D1B16230000D1635B /* ListViewController.swift in Sources */,
 				FF423E9A1B889B84003487B7 /* BoardingBusPass.swift in Sources */,
 				FFA7B8DC1B273FA5000C6A47 /* TableViewDataSource.swift in Sources */,
@@ -454,6 +450,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fjbelchi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -466,6 +463,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fjbelchi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -485,6 +483,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fjbelchi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoardingCards.app/BoardingCards";
 			};
 			name = Debug;
@@ -501,6 +500,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fjbelchi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BoardingCards.app/BoardingCards";
 			};
 			name = Release;

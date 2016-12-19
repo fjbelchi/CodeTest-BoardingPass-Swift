@@ -10,17 +10,17 @@ import Foundation
 final public class BoardingPassGenerator {
     
     // -- Cities
-    private let madrid : City
-    private let barcelona : City
-    private let gerona : City
-    private let london : City
-    private let newYork : City
+    fileprivate let madrid : City
+    fileprivate let barcelona : City
+    fileprivate let gerona : City
+    fileprivate let london : City
+    fileprivate let newYork : City
     
     // -- Passes
-    private let passMadridToBarcelona : AnyBoardingPass
-    private let passBarcelonaToGerona : AnyBoardingPass
-    private let passGeronaToLondon : AnyBoardingPass
-    private let passLondonToNewYork : AnyBoardingPass
+    fileprivate let passMadridToBarcelona : AnyBoardingPass
+    fileprivate let passBarcelonaToGerona : AnyBoardingPass
+    fileprivate let passGeronaToLondon : AnyBoardingPass
+    fileprivate let passLondonToNewYork : AnyBoardingPass
     
     public init() {
         madrid = City(name: "Madrid")
@@ -51,7 +51,7 @@ final public class BoardingPassGenerator {
         return [passMadridToBarcelona, passBarcelonaToGerona, passGeronaToLondon, passLondonToNewYork]
     }
     
-    private func addToSet<T>(pass: T?, inout set:Set<T>) {
+    fileprivate func addToSet<T>(_ pass: T?, set:inout Set<T>) {
         if let boardingPass = pass {
             set.insert(boardingPass)
         }

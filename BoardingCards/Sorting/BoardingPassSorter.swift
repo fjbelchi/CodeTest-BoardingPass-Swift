@@ -11,7 +11,7 @@ final public class BoardingPassSorter {
     
     public init() {}
     
-    public func sort<T: BoardingPassType>(set:Set<T>) -> Array<T> {
+    public func sort<T: BoardingPassType>(_ set:Set<T>) -> Array<T> {
         
         // Sets of cities
         var fromCitySet : Set<City> = []
@@ -29,7 +29,7 @@ final public class BoardingPassSorter {
         }
         
         // Determine start and end
-        let startEndCities = fromCitySet.exclusiveOr(toCitySet)
+        let startEndCities = fromCitySet.symmetricDifference(toCitySet)
         var startBoardingPass : T?
         var endBoardingPass : T?
         

@@ -12,19 +12,19 @@ public typealias CellAdapterRegistration = (identifier: String, cellClass: AnyCl
     TableViewAdapter is an adapter class in charge 
 */
 public protocol TableViewAdapter {
-    typealias ItemType
+    associatedtype ItemType
     
     var rowHeight: CGFloat { get }
     var classOfCellToRegister: [CellAdapterRegistration] { get }
     
-    func reuseIdentifierForObject(object: ItemType) -> String
-    func configureCell(tableView: UITableView, cell:UITableViewCell, object:ItemType, indexPath:NSIndexPath)
+    func reuseIdentifierForObject(_ object: ItemType) -> String
+    func configureCell(_ tableView: UITableView, cell:UITableViewCell, object:ItemType, indexPath:IndexPath)
 }
 
 extension UITableView {
-    func registerCells<T: TableViewAdapter>(adapter: T) {
+    func registerCells<T: TableViewAdapter>(_ adapter: T) {
         for cellAdapter in adapter.classOfCellToRegister  {
-            self.registerClass(cellAdapter.cellClass, forCellReuseIdentifier: cellAdapter.identifier)
+            self.register(cellAdapter.cellClass, forCellReuseIdentifier: cellAdapter.identifier)
         }
     }
 }

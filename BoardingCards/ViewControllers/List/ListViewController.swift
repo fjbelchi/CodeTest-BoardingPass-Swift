@@ -7,11 +7,11 @@ import UIKit
 
 final public class ListViewController: UIViewController {
 
-    lazy private var autolayoutConstrains = [NSLayoutConstraint]()
+    lazy fileprivate var autolayoutConstrains = [NSLayoutConstraint]()
     
-    lazy private var tableView: UITableView = {
+    lazy fileprivate var tableView: UITableView = {
         [unowned self] in
-        let view = UITableView(frame: CGRectZero, style: .Plain)
+        let view = UITableView(frame: CGRect.zero, style: .plain)
         view.translatesAutoresizingMaskIntoConstraints = false
         view.registerCells(self.tableViewAdapter)
         view.rowHeight = self.tableViewAdapter.rowHeight
@@ -19,36 +19,36 @@ final public class ListViewController: UIViewController {
         view.dataSource = self.tableViewDataSource
         view.allowsSelection = false
         
-        let xConstraint = NSLayoutConstraint(item: view, attribute: .Left,
-                                             relatedBy: .Equal,
-                                             toItem: self.view, attribute: .Left, multiplier: 1.0, constant: 0)
+        let xConstraint = NSLayoutConstraint(item: view, attribute: .left,
+                                             relatedBy: .equal,
+                                             toItem: self.view, attribute: .left, multiplier: 1.0, constant: 0)
         
-        let yConstraint = NSLayoutConstraint(item: view, attribute: .Top,
-                                             relatedBy: .Equal,
-                                             toItem: self.view, attribute: .Top, multiplier: 1.0, constant: 0)
+        let yConstraint = NSLayoutConstraint(item: view, attribute: .top,
+                                             relatedBy: .equal,
+                                             toItem: self.view, attribute: .top, multiplier: 1.0, constant: 0)
         
-        let widthConstraint = NSLayoutConstraint(item: view, attribute: .Right,
-                                                 relatedBy: .Equal,
-                                                 toItem: self.view, attribute: .Right, multiplier: 1.0, constant: 0)
+        let widthConstraint = NSLayoutConstraint(item: view, attribute: .right,
+                                                 relatedBy: .equal,
+                                                 toItem: self.view, attribute: .right, multiplier: 1.0, constant: 0)
         
-        let heightConstraint = NSLayoutConstraint(item: view, attribute: .Bottom,
-                                                  relatedBy: .Equal,
-                                                  toItem: self.view, attribute: .Bottom, multiplier: 1.0, constant: 0)
+        let heightConstraint = NSLayoutConstraint(item: view, attribute: .bottom,
+                                                  relatedBy: .equal,
+                                                  toItem: self.view, attribute: .bottom, multiplier: 1.0, constant: 0)
         
         self.autolayoutConstrains += [xConstraint, yConstraint, widthConstraint, heightConstraint]
         return view
     }()
     
-    lazy private var tableViewAdapter = PassTableViewAdapter()
+    lazy fileprivate var tableViewAdapter = PassTableViewAdapter()
     
-    lazy private var tableViewDataSource: TableViewDataSource<AnyBoardingPass,PassTableViewAdapter>? = {
+    lazy fileprivate var tableViewDataSource: TableViewDataSource<AnyBoardingPass,PassTableViewAdapter>? = {
         [unowned self] in
         let passes = Array<AnyBoardingPass>(self.boardingPass)
-        let sections = SectionedDataSource(sections: [Section(passes)])
+        let sections = SectionedDataSource(sections: [passes])
         return TableViewDataSource(sections: sections, tableViewAdapter: self.tableViewAdapter)
     }()
     
-    lazy private var boardingPass: Set<AnyBoardingPass> = {
+    lazy fileprivate var boardingPass: Set<AnyBoardingPass> = {
         let generator = BoardingPassGenerator()
         return generator.boardingPassesUnsorted()
     }()
@@ -58,15 +58,15 @@ final public class ListViewController: UIViewController {
         self.title = "Boarding Cards"
         self.view.addSubview(self.tableView)
         
-        NSLayoutConstraint.activateConstraints(autolayoutConstrains)
+        NSLayoutConstraint.activate(autolayoutConstrains)
         
-        let sortButton = UIBarButtonItem(title: "Sort", style: .Plain, target: self, action:"sort")
+        let sortButton = UIBarButtonItem(title: "Sort", style: .plain, target: self, action:#selector(ListViewController.sort))
         self.navigationItem.rightBarButtonItem = sortButton
     }
     
     func sort() {
         let sorter = BoardingPassSorter()
-        let newSection = Section(sorter.sort(self.boardingPass))
+        let newSection = sorter.sort(self.boardingPass)
         self.tableViewDataSource?.sections = SectionedDataSource(sections: [newSection])
         self.tableView.reloadData()
     }

@@ -10,12 +10,12 @@ public protocol BoardingPassType {
     var cityFrom: City { get }
     var cityTo: City { get }
     
-    func isEqualTo(boardingPass: BoardingPassType) -> Bool
+    func isEqualTo(_ boardingPass: BoardingPassType) -> Bool
 }
 
 extension Equatable where Self: BoardingPassType {
     
-    public func isEqualTo(boarding: BoardingPassType) -> Bool {
+    public func isEqualTo(_ boarding: BoardingPassType) -> Bool {
         guard let other = boarding as? Self else { return false }
         return other.boardingId == self.boardingId
     }

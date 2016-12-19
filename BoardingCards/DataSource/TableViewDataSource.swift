@@ -13,7 +13,7 @@ import UIKit
     - SectionsDataSource: Collection of data to display
 */
 
-final public class TableViewDataSource<ItemType, Adapter: TableViewAdapter where Adapter.ItemType == ItemType>: NSObject, UITableViewDataSource {
+final public class TableViewDataSource<ItemType, Adapter: TableViewAdapter>: NSObject, UITableViewDataSource where Adapter.ItemType == ItemType {
     
     var sections: SectionedDataSource<ItemType>
     let adapter: Adapter
@@ -25,20 +25,20 @@ final public class TableViewDataSource<ItemType, Adapter: TableViewAdapter where
     
     // MARK: UITableViewDataSource
     
-    public func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return self.sections.numberOfSections()
     }
     
-    public func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.sections.numberOfItemsInSection(section)
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.sections.numberOfItems(inSection: section)
     }
     
-    public func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let object = self.sections.itemAtIndexPath(indexPath)
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let object = self.sections.itemAt(indexPath)
 
         let identifier = self.adapter.reuseIdentifierForObject(object)
         
-        let cell = tableView.dequeueReusableCellWithIdentifier(identifier, forIndexPath: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
         self.adapter.configureCell(tableView, cell: cell, object: object, indexPath: indexPath)
         return cell
     }

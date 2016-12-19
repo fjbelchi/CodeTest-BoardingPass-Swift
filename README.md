@@ -1,6 +1,6 @@
 # CodeTest-BoardingPass-Swift
 
-Code Tests done in Swift, Xcode 7b5, following POP
+Code Tests done in Swift, Xcode 7b5, following POP and converted to Swift 3.
 
 
 ##The exercise
@@ -11,11 +11,11 @@ Provide an application that let's you sort this kind of list and present back a 
 
 - Take train 78A from Madrid to Barcelona. Sit in seat 45B.
 - Take the airport bus from Barcelona to Gerona Airport. No seat assignment.
-- From Gerona Airport, take flight SK455 to London. Gate 45B, seat 3A. Baggage  drop at ticket counter 344.
-- From London, take flight SK22 to New York JFK. Gate 22, seat 7B. Baggage will we  automatically transferred from your last leg.
-You have arrived at your final destination. 
+- From Gerona Airport, take flight SK455 to London. Gate 45B, seat 3A. Baggage drop at ticket counter 344.
+- From London, take flight SK22 to New York JFK. Gate 22, seat 7B. Baggage will we automatically transferred from your last leg.
+You have arrived at your final destination.
 
-The list should be defined in a format that's compatible with the input format. It has to be a client side application, with no server communication.  The UI of the application should match the following wireframe as much as possible, (although bonus points will be granted for grateful surprises).
+The list should be defined in a format that's compatible with the input format. It has to be a client side application, with no server communication. The UI of the application should match the following wireframe as much as possible, (although bonus points will be granted for grateful surprises).
 
 ## Requirements
 

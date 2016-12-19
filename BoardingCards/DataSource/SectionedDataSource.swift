@@ -8,22 +8,22 @@ import Foundation
 /// Struct to group multiples sections for a UITableViewDataSource
 
 struct SectionedDataSource<T> {
-    let sections: [Section<T>]
+    let sections: [[T]]
     
-    init(sections: [Section<T>]) {
+    init(sections: [[T]]) {
         self.sections = sections
     }
     
     func numberOfSections() -> Int {
-        return sections.count
+        return self.sections.count
     }
     
-    func numberOfItemsInSection(section: Int) -> Int {
-        return sections[section].items.count
+    func numberOfItems(inSection: Int) -> Int {
+        return self.sections[inSection].count
     }
     
-    func itemAtIndexPath(indexPath: NSIndexPath) -> T {
-        return sections[indexPath.section].items[indexPath.row]
+    func itemAt(_ indexPath: IndexPath) -> T {
+        return self.sections[indexPath.section][indexPath.row]
     }
 }
 

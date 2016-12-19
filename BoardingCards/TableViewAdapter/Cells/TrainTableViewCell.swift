@@ -9,55 +9,55 @@ import UIKit
 
 final class TrainTableViewCell: UITableViewCell {
     
-    lazy private var autolayoutConstrains = [NSLayoutConstraint]()
+    lazy fileprivate var autolayoutConstrains = [NSLayoutConstraint]()
     
-    lazy private var headerTitleLabel: UILabel = {
+    lazy fileprivate var headerTitleLabel: UILabel = {
         [unowned self] in
-        let view = UILabel(frame: CGRectZero)
+        let view = UILabel(frame: CGRect.zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.textAlignment = .Center
-        view.font = UIFont.boldSystemFontOfSize(14.0)
-        view.textColor = UIColor.blueColor()
+        view.textAlignment = .center
+        view.font = UIFont.boldSystemFont(ofSize: 14.0)
+        view.textColor = UIColor.blue
 
-        let xConstraint = NSLayoutConstraint(item: view, attribute: .Left,
-            relatedBy: .Equal,
-            toItem: self.contentView, attribute: .Left, multiplier: 1.0, constant: 20)
+        let xConstraint = NSLayoutConstraint(item: view, attribute: .left,
+            relatedBy: .equal,
+            toItem: self.contentView, attribute: .left, multiplier: 1.0, constant: 20)
         
-        let yConstraint = NSLayoutConstraint(item: view, attribute: .Top,
-            relatedBy: .Equal,
-            toItem: self.contentView, attribute: .Top, multiplier: 1.0, constant: 10)
+        let yConstraint = NSLayoutConstraint(item: view, attribute: .top,
+            relatedBy: .equal,
+            toItem: self.contentView, attribute: .top, multiplier: 1.0, constant: 10)
         
-        let widthConstraint = NSLayoutConstraint(item: view, attribute: .Right,
-            relatedBy: .Equal,
-            toItem: self.contentView, attribute: .Right, multiplier: 1.0, constant: -20)
+        let widthConstraint = NSLayoutConstraint(item: view, attribute: .right,
+            relatedBy: .equal,
+            toItem: self.contentView, attribute: .right, multiplier: 1.0, constant: -20)
         
         self.autolayoutConstrains += [xConstraint, yConstraint, widthConstraint]
         return view
     }()
     
-    lazy private var trainDescriptionLabel: UILabel = {
+    lazy fileprivate var trainDescriptionLabel: UILabel = {
         [unowned self] in
-        let view = UILabel(frame: CGRectZero)
+        let view = UILabel(frame: CGRect.zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.font = UIFont.systemFontOfSize(12.0)
-        view.textAlignment = .Center
+        view.font = UIFont.systemFont(ofSize: 12.0)
+        view.textAlignment = .center
         view.numberOfLines = 0
         
-        let xConstraint = NSLayoutConstraint(item: view, attribute: .Left,
-            relatedBy: .Equal,
-            toItem: self.contentView, attribute: .Left, multiplier: 1.0, constant: 20)
+        let xConstraint = NSLayoutConstraint(item: view, attribute: .left,
+            relatedBy: .equal,
+            toItem: self.contentView, attribute: .left, multiplier: 1.0, constant: 20)
         
-        let yConstraint = NSLayoutConstraint(item: view, attribute: .Top,
-            relatedBy: .Equal,
-            toItem: self.headerTitleLabel, attribute: .Bottom, multiplier: 1.0, constant: 10)
+        let yConstraint = NSLayoutConstraint(item: view, attribute: .top,
+            relatedBy: .equal,
+            toItem: self.headerTitleLabel, attribute: .bottom, multiplier: 1.0, constant: 10)
         
-        let widthConstraint = NSLayoutConstraint(item: view, attribute: .Right,
-            relatedBy: .Equal,
-            toItem: self.contentView, attribute: .Right, multiplier: 1.0, constant: -20)
+        let widthConstraint = NSLayoutConstraint(item: view, attribute: .right,
+            relatedBy: .equal,
+            toItem: self.contentView, attribute: .right, multiplier: 1.0, constant: -20)
         
-        let heightConstraint = NSLayoutConstraint(item: self.contentView, attribute: .Bottom,
-            relatedBy: .Equal,
-            toItem: view, attribute: .Bottom, multiplier: 1.0, constant: 20)
+        let heightConstraint = NSLayoutConstraint(item: self.contentView, attribute: .bottom,
+            relatedBy: .equal,
+            toItem: view, attribute: .bottom, multiplier: 1.0, constant: 20)
         
         self.autolayoutConstrains += [xConstraint, yConstraint, widthConstraint, heightConstraint]
         return view
@@ -80,7 +80,7 @@ final class TrainTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.headerTitleLabel)
         self.contentView.addSubview(self.trainDescriptionLabel)
         
-        NSLayoutConstraint.activateConstraints(autolayoutConstrains)
+        NSLayoutConstraint.activate(autolayoutConstrains)
     }
 
     required init?(coder aDecoder: NSCoder) {
