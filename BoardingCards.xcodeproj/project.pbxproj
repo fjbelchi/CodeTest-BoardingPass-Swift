@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07067D7CB07A3C7D91DA0F2A /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D8D62A5279D79848FC7442 /* CoreMedia.framework */; };
+		375E4C56C106FDBF184EF88B /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFD94A87166ABF465D669C84 /* CoreTelephony.framework */; };
+		50A517143EA4355480708C06 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57BFE25BEAE56BB243773909 /* AVFoundation.framework */; };
+		964961A9BD047B7356AF70C8 /* BuddyBuildSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56EB88EF05C4F2DDC5B0A30 /* BuddyBuildSDK.framework */; };
+		C39AA28EACDA6BBB3EFA82F4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8265AC8EF6344515441041B /* CoreVideo.framework */; };
+		DD3528D5B6283F9F00B6FCE6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6CD481DC50EDFEFDA300F22 /* SystemConfiguration.framework */; };
+		E24C80D1FDA04111A8B2A772 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EEC57E7A6ABE5302A482785 /* QuartzCore.framework */; };
+		F118046F9CDCE2B38C68C348 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127DA469721FE70034A84EEA /* CoreText.framework */; };
 		FF423E971B88635A003487B7 /* TrainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF423E961B88635A003487B7 /* TrainTableViewCell.swift */; };
 		FF423E9A1B889B84003487B7 /* BoardingBusPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF423E991B889B84003487B7 /* BoardingBusPass.swift */; };
 		FF423E9D1B889BA8003487B7 /* BoardingPlanePass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF423E9C1B889BA8003487B7 /* BoardingPlanePass.swift */; };
@@ -23,6 +31,7 @@
 		FFF4C53E1AE66CEF00531021 /* BoardingPassGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4C53D1AE66CEF00531021 /* BoardingPassGeneratorTests.swift */; };
 		FFF4C5401AE6A6EC00531021 /* BoardingPassSorterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4C53F1AE6A6EC00531021 /* BoardingPassSorterTests.swift */; };
 		FFF4C5421AE6A70700531021 /* BoardingPassSorter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF4C5411AE6A70700531021 /* BoardingPassSorter.swift */; };
+		FFF5CBE11FA4EB2E7F24606E /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8101BDB4B2A10991F60107FC /* AssetsLibrary.framework */; };
 		FFF86EFD1B68B8AA001157CE /* BoardingTrainPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF86EFC1B68B8AA001157CE /* BoardingTrainPass.swift */; };
 		FFFEF8AC1AC160C400FA7DF5 /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEF8AB1AC160C400FA7DF5 /* City.swift */; };
 		FFFEF8AE1AC160EE00FA7DF5 /* BoardingBusPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFEF8AD1AC160EE00FA7DF5 /* BoardingBusPassTests.swift */; };
@@ -39,6 +48,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		127DA469721FE70034A84EEA /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		1EEC57E7A6ABE5302A482785 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		57BFE25BEAE56BB243773909 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		66D8D62A5279D79848FC7442 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		8101BDB4B2A10991F60107FC /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		A56EB88EF05C4F2DDC5B0A30 /* BuddyBuildSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BuddyBuildSDK.framework; sourceTree = "<group>"; };
+		AF8D3BBAA81299D032056073 /* Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		C8265AC8EF6344515441041B /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		EFD94A87166ABF465D669C84 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		F6CD481DC50EDFEFDA300F22 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FF423E961B88635A003487B7 /* TrainTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainTableViewCell.swift; path = TableViewAdapter/Cells/TrainTableViewCell.swift; sourceTree = "<group>"; };
 		FF423E991B889B84003487B7 /* BoardingBusPass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingBusPass.swift; path = Models/BoardingBusPass.swift; sourceTree = "<group>"; };
 		FF423E9C1B889BA8003487B7 /* BoardingPlanePass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BoardingPlanePass.swift; path = Models/BoardingPlanePass.swift; sourceTree = "<group>"; };
@@ -69,6 +88,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				964961A9BD047B7356AF70C8 /* BuddyBuildSDK.framework in Frameworks */,
+				FFF5CBE11FA4EB2E7F24606E /* AssetsLibrary.framework in Frameworks */,
+				F118046F9CDCE2B38C68C348 /* CoreText.framework in Frameworks */,
+				375E4C56C106FDBF184EF88B /* CoreTelephony.framework in Frameworks */,
+				DD3528D5B6283F9F00B6FCE6 /* SystemConfiguration.framework in Frameworks */,
+				E24C80D1FDA04111A8B2A772 /* QuartzCore.framework in Frameworks */,
+				50A517143EA4355480708C06 /* AVFoundation.framework in Frameworks */,
+				07067D7CB07A3C7D91DA0F2A /* CoreMedia.framework in Frameworks */,
+				C39AA28EACDA6BBB3EFA82F4 /* CoreVideo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,6 +110,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0165A258B61F852B1833F21C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A56EB88EF05C4F2DDC5B0A30 /* BuddyBuildSDK.framework */,
+				8101BDB4B2A10991F60107FC /* AssetsLibrary.framework */,
+				127DA469721FE70034A84EEA /* CoreText.framework */,
+				EFD94A87166ABF465D669C84 /* CoreTelephony.framework */,
+				F6CD481DC50EDFEFDA300F22 /* SystemConfiguration.framework */,
+				1EEC57E7A6ABE5302A482785 /* QuartzCore.framework */,
+				57BFE25BEAE56BB243773909 /* AVFoundation.framework */,
+				66D8D62A5279D79848FC7442 /* CoreMedia.framework */,
+				C8265AC8EF6344515441041B /* CoreVideo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FF423E951B886323003487B7 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +167,8 @@
 				FFB3A3981AB817570012DB92 /* BoardingCardsTests */,
 				FFB3A3991AB817570012DB92 /* Supporting Files */,
 				FFB3A3811AB817570012DB92 /* Products */,
+				0165A258B61F852B1833F21C /* Frameworks */,
+				AF8D3BBAA81299D032056073 /* Bridging-Header.h */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,6 +333,9 @@
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
 			mainGroup = FFB3A3771AB817560012DB92;
 			productRefGroup = FFB3A3811AB817570012DB92 /* Products */;
 			projectDirPath = "";
@@ -445,10 +494,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BoardingCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fjbelchi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -459,10 +513,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = BoardingCards/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fjbelchi.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

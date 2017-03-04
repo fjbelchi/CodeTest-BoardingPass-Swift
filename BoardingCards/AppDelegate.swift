@@ -11,6 +11,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        BuddyBuildSDK.setup()
+        
         let listViewController = ListViewController()
         let navigationController = UINavigationController(rootViewController: listViewController)
         self.window = UIWindow(frame: UIScreen.main.bounds)
